@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>photo frame</title>
+	<style>
+		body, div, ul, li, p {margin: 0; padding: 0;}
+		ul li {list-style: none;}
+		.content ul li {height: 176px; width: 176px; padding: 10px; position: relative;}
+		.focus {height: 174px; width: 174px; background: rgba(250, 250, 250, .25); border: 1px dashed #666; position: absolute; left: 10px; top: 10px; display: none;}
+		.focus::before {height: 134px; width: 174px; border: 1px solid #fff; border-width: 0px 1px; content: ""; position: absolute; left: -1px; top: 20px;}
+		.focus::after {height: 174px; width: 134px; border: 1px solid #fff; border-width: 1px 0px; content: ""; position: absolute; left: 20px; top: -1px;}
+		.content ul li:hover .focus {display: block;}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<ul>
+			<li><a href="sources/jiawin_1.jpg" target="_blank">
+				<img src="sources/jiawin_1.jpg">
+				<p class="focus"></p>
+			</a></li>
+			<li><a href="sources/jiawin_2.jpg" target="_blank">
+				<img src="sources/jiawin_2.jpg">
+				<p class="focus"></p>
+			</a></li>
+			<li><a href="sources/jiawin_3.jpg" target="_blank">
+				<img src="sources/jiawin_3.jpg">
+				<p class="focus"></p>
+			</a></li>
+			<li><a href="sources/jiawin_4.jpg" target="_blank">
+				<img src="sources/jiawin_4.jpg">
+				<p class="focus"></p>
+			</a></li>
+		</ul>
+	</div>
+</body>
+</html>

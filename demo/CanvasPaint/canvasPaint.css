@@ -1,0 +1,35 @@
+img {
+	border: 1px solid transparent;
+	float: left;
+	width: 48px;
+	height: 48px;
+	padding: 5px;
+}
+
+img:hover, .selected {
+	background: white;
+	border: 1px solid gray;
+}
+
+canvas {
+	border: 1px solid gray;
+}
+
+.canvasContainer {
+	clear: both;
+}
+
+.toolbar {
+	background: #F2F7FE;
+	border: 1px solid gray;
+	float: left;
+	font-family: 'Trebuchet MS';
+	font-variant: small-caps;
+	margin: 0 2px 2px 0;
+	padding: 5px 15px ;
+	text-align: center;
+}
+
+input {
+	padding: 5px;
+}

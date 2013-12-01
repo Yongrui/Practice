@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+body {
+	background-color: #fff;
+}
+
+#wrap {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+#clock {
+	background: url(../img/clockface.jpg);
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	list-style: none;
+	position: relative;
+}
+
+#second, #minute, #hour {
+	width: 30px;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 285px;
+}
+
+#second {
+	background: url(../img/sechand.png);
+	z-index: 3;
+}
+
+#minute {
+	background: url(../img/minhand.png);
+	z-index: 2;
+}
+
+#hour {
+	background: url(../img/hourhand.png);
+	z-index: 1;
+}

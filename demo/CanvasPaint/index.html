@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- save from url=(0014)about:internet -->
+	<title>Paint</title>
+	<link rel="stylesheet" href="canvasPaint.css">
+	<script src="canvasPaint.js"></script>
+</head>
+
+<body>
+	<div class="toolbar" id="pens">
+		- Pen Color -<br>
+		<img id="blackPen" src="pen_black.png" alt="Black Pen" title="rgb(0,0,0)">
+		<img id="redPen" src="pen_red.gif" alt="Red Pen" title="rgb(212,21,29)">
+		<img id="greenPen" src="pen_green.gif" alt="Green Pen" title="rgb(131,190,61)">
+		<img id="bluePen" src="pen_blue.gif" alt="Blue Pen" title="rgb(0,86,166)">
+	</div>
+	<div class="toolbar" id="thicknesses">
+		- Pen Thickness -<br>
+		<img id="thinThickness" src="pen_thin.gif" alt="Thin Thickness" title="1">
+		<img id="mediumThickness" src="pen_medium.gif" alt="Medium Thickness" title="5">
+		<img id="thickThickness" src="pen_thick.gif" alt="Thick Thickness" title="10">
+	</div>
+
+	<div class="canvasContainer">
+		<canvas id="drawingCanvas" width="640" height="480"></canvas>
+	</div>
+
+	<div class="toolbar">
+		- Application -<br>
+		<input id="save" type="button" value="Save the Canvas">
+		<input id="clear" type="button" value="Clear the Canvas">
+	</div>
+</body>
+</html>
